@@ -13,13 +13,29 @@ body{
     border-bottom: 1px solid greenyellow;
     height: 100px;
 }
-.header img{
+.logo img{
     margin: 20px 5px;
     width: 30px;
     border: 1px solid greenyellow;
     padding: 5px;
     height: 20px;
     border-radius: 50%;
+    animation-name: imgspin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;
+}
+@keyframes imgspin{
+    0%{
+        scale: 100%;
+    }
+    50%{
+        scale: 120%;
+    }
+    100%{
+        scale: 100%;
+    }
 }
 .header button{
     width: 120px;
@@ -67,10 +83,9 @@ body{
 }
 .pic img{
     background-color: rgb(39, 36, 36);
-    margin: 60px 60px 30px;
+    margin: 20px;
     width: 200px;
     height: 160px;
-    transition: all 0.5s ease-in-out;
 }
 .body a:hover{
     background-color: rgb(196, 196, 57);
