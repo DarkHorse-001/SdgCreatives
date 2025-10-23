@@ -20,6 +20,22 @@ body{
     padding: 5px;
     height: 20px;
     border-radius: 50%;
+    animation-name: imgspin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;
+}
+@keyframes imgspin{
+    0%{
+        scale: 100%;
+    }
+    50%{
+        scale: 120%;
+    }
+    100%{
+        scale: 100%;
+    }
 }
 .header button{
     width: 120px;
