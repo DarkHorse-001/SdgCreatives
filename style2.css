@@ -2,7 +2,8 @@ body{
     margin: 0;
     color: wheat;
 }
-.headbody {
+@media (max-width: 2504px){
+    .headbody {
     background-color: rgba(5, 5, 56, 0.849);
     height: 600px;
 }
@@ -189,4 +190,248 @@ body{
     color: wheat;
     padding: 20px;
     margin: 10px;
+}
+.follow h4{
+    text-align: left;
+    color: gold;
+}
+.hand {
+    display: none;
+}
+}
+@media (max-width: 780px) {
+    .headbody {
+    background-color: rgba(5, 5, 56, 0.849);
+    height: auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid greenyellow;
+    height: 100px;
+}
+.header img{
+    margin: 20px 5px;
+    width: 30px;
+    border: 1px solid greenyellow;
+    padding: 5px;
+    height: 20px;
+    border-radius: 50%;
+    animation-name: imgspin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;
+}
+@keyframes imgspin{
+    0%{
+        scale: 100%;
+    }
+    50%{
+        scale: 120%;
+    }
+    100%{
+        scale: 100%;
+    }
+}
+.header button{
+    display: none;
+    width: 120px;
+    height: 40px;
+    background-color: goldenrod;
+    margin: 30px 30px;
+    font-size: 10px ;
+    border-radius: 15px;
+}
+#sd{
+    margin-left: 25px;
+}
+.hand{
+    display: inline-table;
+    overflow: hidden;
+}
+details{
+    height: auto;
+    border-radius: 7px;
+    margin: 14% auto;
+    transition: all .3s ease-in-out;
+    background-color: rgba(5, 5, 56, 0.849);
+    z-index: 2;
+}
+summary{
+    text-align: right;
+    list-style: none;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+}
+details:not([open]){
+    width: 80px;
+    height: 80px;
+    margin: 30% auto;
+    background-color: transparent;
+}
+
+.hand li{
+    width: 100%;
+    padding: 20px;
+    color: white;
+}
+.header a{
+    display: none;
+    margin: 25px 0 5px;
+    text-decoration: none;
+    color: wheat;
+    width: 3px;
+    padding: 5px 30px;
+}
+.hheader{
+    text-align: center;
+    color: wheat;
+    padding: 20px;
+    font-size: 35px;
+}
+.hheader h3{
+    color: goldenrod;
+    font-size: 10px;
+}
+.hheader h4{
+    font-size: 45px;
+    font-weight: 400;
+}
+.hheader p{
+    font-size: 20px;
+}
+.pic img{
+    display: none;
+    background-color: rgb(39, 36, 36);
+    margin: 60px 60px 30px;
+    width: 200px;
+    height: 160px;
+    transition: all 0.5s ease-in-out;
+}
+.hheader h2{
+    color: greenyellow;
+}
+.body{
+    padding: 30px 10px 10px;
+    background-color: white;
+}
+.body a{
+    text-decoration: none;
+    color: grey;
+    padding: 10px;
+}
+.body a:hover{
+    background-color: rgb(196, 196, 57);
+    border-radius: 10px;
+    color: rgb(133, 96, 3);
+}
+.pictures{
+    display: block;
+    padding: 10px;
+    margin: 5px;
+}
+.pic1, .pic2, .pic3{
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 20px gray;
+    height: auto;
+    border-radius: 10px;
+    color: black;
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+.pic1:hover, .pic2:hover, .pic3:hover{
+    box-shadow: 0px 10px 20px rgb(41, 40, 40);
+    transform: scale(1.05);
+    z-index: 2;
+}
+.pic4:hover{
+    box-shadow: 0px 10px 20px rgb(41, 40, 40);
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+.pic4{
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 20px gray;
+    height: auto;
+    border-radius: 10px;
+    color: black;
+    padding: 20px;
+    margin: 10px;
+    width: 95%;
+    transition: all 0.5s ease-in-out;
+}
+
+.pic1 img, .pic2 img, .pic3 img, .pic4 img{
+    width: 100%;
+    height: 250px;
+    margin: 10px auto;
+}
+.dbg{
+    background-color: rgb(196, 196, 57);
+    color: rgb(133, 96, 3)
+}
+.icon i{
+    padding: 10px;
+}
+.footer{
+    background-color: rgb(5, 5, 48);
+    border-top: 2px solid greenyellow;
+    margin: 10px;
+    padding: 20px;
+}
+.foot1{
+    display: block;
+    margin: 20px 10px 100px;
+}
+.foot2{
+    background-color: rgb(2, 2, 60);
+    box-sizing: border-box;
+    box-shadow:10px 10px 10px rgb(1, 1, 37);
+    display: block;
+}
+.follow h4{
+    text-align: left;
+    color: gold;
+}
+.follow button{
+    width: 150px;
+    height: 40px;
+    background-color: goldenrod;
+    margin: 30px 0;
+    font-size: 12px;
+    border-radius: 15px;
+    border-color: rgb(2, 2, 60);
+}
+.foot1 img{
+    margin: auto;
+}
+.foot1 .icon{
+    margin: 40px 2px 5px;
+}
+.foot1 .icon i{
+    padding: 10px;
+    margin: 10px;
+}
+.foot3{
+    display: block;
+    padding: 20px;
+    border-bottom: 1px solid rgb(39, 36, 36);
+}
+.foot3 h3{
+    color: gold;
+}
+.quick a{
+    text-decoration: none;
+    color: wheat;
+    padding: 20px;
+    margin: 10px;
+}
 }
